@@ -3,6 +3,10 @@ title: "resume.qmd"
 format: html
 ---
 
-<iframe src="Offical Resume Ant.pdf" width="100%" height="900px" style="border:none;">\<</iframe>
+<iframe src="Offical Resume Ant.pdf" width="100%" height="900px" style="border:none;">
 
-[Download my resume(PDF)](Offical Resume Ant.pdf)
+\<
+
+</iframe>
+
+[Download my resume(PDF)](Offical%20Resume%20Ant.pdf)
