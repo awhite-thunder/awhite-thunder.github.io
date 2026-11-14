@@ -1,9 +1,10 @@
 ---
-title: "Index.qmd"
+
+---
 title: "Data Visualization - The California Housing Market"
-date: “2026-11-13”
-image: ![Cover image](imago.png)
-TeamMembers: [Caleb Duncan](https://caleb-duncan0719.github.io/) - [Eleanor Suttle](https://eleanorrsuttle.github.io/) - [Anthony White](https://awhite-thunder.github.io) - [Melany Chavez](https://) - [Lifted David](https://ldavid1.github.io/)
+date: "2026-11-13"
+image: imago.png
+TeamMembers: "[Caleb Duncan](https://caleb-duncan0719.github.io/) - [Eleanor Suttle](https://eleanorrsuttle.github.io/) - [Anthony White](https://awhite-thunder.github.io) - [Melany Chavez](https://) - [Lifted David](https://ldavid1.github.io/)"
 lightbox: true
 format: html
 ---
@@ -28,7 +29,7 @@ Excel Analysis: To make this bar-chart, we started by creating a pivot table of 
 
 Visual Development: Our team created an assertion-evidence slide that features the bar-chart that was created to answer this question, and the assertion statement in the heading.
 
-Assertion-Evidence Slide: ![Scatter Plot](BarChart.png) ---
+Assertion-Evidence Slide: ![Scatter Plot](BarChart.png)
 
 **What relationship exists between mortgage interest rates for single - family homes with a 20% down payment and median single-family home prices across California cities?**
 
