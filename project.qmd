@@ -1,6 +1,6 @@
 ---
 title: "project.qmd"
-listing: true
+listing:
   contents: posts
   sort: "date"
   type: grid
