@@ -1,6 +1,4 @@
 ---
-
----
 title: "Data Visualization - The California Housing Market"
 date: "2026-11-13"
 image: imago.png
@@ -21,6 +19,8 @@ Visual Development:
 
 Assertion-Evidence Slide:
 
+[Time series of median sale prices in California](TimeSeries.png)
+
 **Which California cities have the highest average housing prices?**
 
 Why this question is interesting: A state as large as California has hundreds cities with varying populations and geographical characteristics. This question helps us look into how different factors affect housing prices, and allows us to compare these affects to other parts of the United States.
@@ -29,7 +29,9 @@ Excel Analysis: To make this bar-chart, we started by creating a pivot table of 
 
 Visual Development: Our team created an assertion-evidence slide that features the bar-chart that was created to answer this question, and the assertion statement in the heading.
 
-Assertion-Evidence Slide: ![Scatter Plot](BarChart.png)
+Assertion-Evidence Slide:
+
+[Bar chart of average listing prices by California city](BarChart.png)
 
 **What relationship exists between mortgage interest rates for single - family homes with a 20% down payment and median single-family home prices across California cities?**
 
@@ -42,5 +44,6 @@ To answer this question, we uploaded the relevant data into an excel workbook, a
 Visual Development:\
 Our team created an assertion-evidence slide that features the scatter-plot that was created to answer this question, and the assertion statement in the heading.
 
-Assertion-Evidence Slide:\
-\![Scatter Plot\](ScatterPlot.png)
+Assertion-Evidence Slide:
+
+[Scatter Plot of mortgage rate vs. median house price](ScatterPlot.png)
