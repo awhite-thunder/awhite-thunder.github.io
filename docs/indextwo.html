@@ -44,6 +44,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-6b423f165eeea3787de40cb4f8e821c3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -160,13 +163,23 @@ ul.task-list li input[type="checkbox"] {
 <p>Excel Analysis:</p>
 <p>Visual Development:</p>
 <p>Assertion-Evidence Slide:</p>
-<p><a href="TimeSeries.png">Time series of median sale prices in California</a></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="TimeSeries.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Time series of median sale prices in California"><img src="TimeSeries.png" class="img-fluid figure-img" alt="Time series of median sale prices in California"></a></p>
+<figcaption>Time series of median sale prices in California</figcaption>
+</figure>
+</div>
 <p><strong>Which California cities have the highest average housing prices?</strong></p>
 <p>Why this question is interesting: A state as large as California has hundreds cities with varying populations and geographical characteristics. This question helps us look into how different factors affect housing prices, and allows us to compare these affects to other parts of the United States.</p>
 <p>Excel Analysis: To make this bar-chart, we started by creating a pivot table of the average listing prices across America. Then, state name and region name were set as the rows, and average listing price from 8/31/2026 as the value. The rows were then filtered to only show data from California. After creating the bar-chart from this filtered data, it was then refined with some axis resizing.</p>
 <p>Visual Development: Our team created an assertion-evidence slide that features the bar-chart that was created to answer this question, and the assertion statement in the heading.</p>
 <p>Assertion-Evidence Slide:</p>
-<p><a href="BarChart.png">Bar chart of average listing prices by California city</a></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="BarChart.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Bar chart of average listing prices by California city"><img src="BarChart.png" class="img-fluid figure-img" alt="Bar chart of average listing prices by California city"></a></p>
+<figcaption>Bar chart of average listing prices by California city</figcaption>
+</figure>
+</div>
 <p><strong>What relationship exists between mortgage interest rates for single - family homes with a 20% down payment and median single-family home prices across California cities?</strong></p>
 <p>Why this question is interesting:<br>
 This question showcases how expensive it is/ would be to buy a house in California, and even if you aren’t planning to move, it still provides some perspective on the cost of living in other areas, like Fayetteville, and a general idea of how mortgage price and house price might be correlated elsewhere.</p>
@@ -175,7 +188,12 @@ To answer this question, we uploaded the relevant data into an excel workbook, a
 <p>Visual Development:<br>
 Our team created an assertion-evidence slide that features the scatter-plot that was created to answer this question, and the assertion statement in the heading.</p>
 <p>Assertion-Evidence Slide:</p>
-<p><a href="ScatterPlot.png">Scatter Plot of mortgage rate vs.&nbsp;median house price</a></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="ScatterPlot.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Scatter Plot of mortgage rate vs.&nbsp;median house price"><img src="ScatterPlot.png" class="img-fluid figure-img" alt="Scatter Plot of mortgage rate vs.&nbsp;median house price"></a></p>
+<figcaption>Scatter Plot of mortgage rate vs.&nbsp;median house price</figcaption>
+</figure>
+</div>
 
 
 
@@ -581,6 +599,38 @@ Our team created an assertion-evidence slide that features the scatter-plot that
   });
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

@@ -19,7 +19,7 @@ Visual Development:
 
 Assertion-Evidence Slide:
 
-[Time series of median sale prices in California](TimeSeries.png)
+![Time series of median sale prices in California](TimeSeries.png)
 
 **Which California cities have the highest average housing prices?**
 
@@ -31,7 +31,7 @@ Visual Development: Our team created an assertion-evidence slide that features t
 
 Assertion-Evidence Slide:
 
-[Bar chart of average listing prices by California city](BarChart.png)
+![Bar chart of average listing prices by California city](BarChart.png)
 
 **What relationship exists between mortgage interest rates for single - family homes with a 20% down payment and median single-family home prices across California cities?**
 
@@ -46,4 +46,4 @@ Our team created an assertion-evidence slide that features the scatter-plot that
 
 Assertion-Evidence Slide:
 
-[Scatter Plot of mortgage rate vs. median house price](ScatterPlot.png)
+![Scatter Plot of mortgage rate vs. median house price](ScatterPlot.png)
