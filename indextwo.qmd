@@ -61,6 +61,4 @@ Visual Development:
 
 Our team created an assertion-evidence slide that features the histogram chart that was created to answer this question, and the assertion statement in the heading.
 
-Assertion-Evidence Slide:
-
-\![Histogram of median home prices across 26 California cities](Histogram.png)
+Assertion-Evidence Slide: ![Histogram of median home prices across 26 California cities](Histogram.png)
